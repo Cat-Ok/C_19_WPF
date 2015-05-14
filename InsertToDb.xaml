@@ -1,0 +1,36 @@
+﻿<Window x:Class="C_19_WPF.InsertToDb"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="InsertToDb" Height="254.779" Width="443.382">
+    <Grid HorizontalAlignment="Left" Width="427">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF00A267" Offset="0"/>
+                <GradientStop Color="#FF00A267" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Author " HorizontalAlignment="Left" Margin="21,21,0,0" VerticalAlignment="Top"/>
+        <Label Content="Book Name" HorizontalAlignment="Left" Margin="21,67,0,0" VerticalAlignment="Top"/>
+        <Label Content="Year" HorizontalAlignment="Left" Margin="21,118,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="AuthorDB" HorizontalAlignment="Left" Height="23" Margin="130,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" TextChanged="AuthorDB_TextChanged"/>
+        <TextBox x:Name="UNameDB" HorizontalAlignment="Left" Height="23" Margin="130,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" TextChanged="UNameDB_TextChanged"/>
+        <TextBox x:Name="YearDB" HorizontalAlignment="Left" Height="23" Margin="130,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" TextChanged="YearDB_TextChanged"/>
+        <Label Content="Pages" HorizontalAlignment="Left" Margin="21,163,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PagesDB" HorizontalAlignment="Left" Height="23" Margin="130,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <Button x:Name="InsertToDB" Content="Insert" HorizontalAlignment="Left" Margin="332,28,0,0" VerticalAlignment="Top" Width="76" Height="160" Click="InsertToDB_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.03"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.013"/>
+                    <GradientStop Color="#FF343CE4" Offset="1"/>
+                    <GradientStop Color="#FFF2F2F2" Offset="0.03"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

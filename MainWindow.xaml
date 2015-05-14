@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="C_19_WPF.MainWindow"
+        Title="C_19_WPF_Motherfucker!" Height="350" Width="525" Background="#FFB9A4A4">
+    <Grid x:Name="C_19" Background="#FF7A1111" OpacityMask="#FFC76D6D" RenderTransformOrigin="0.5,0.5" Margin="0,0,3,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="156*"/>
+            <ColumnDefinition Width="196*"/>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="77*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="SqlAuthorList" HorizontalAlignment="Left" Height="282" Margin="0,30,0,0" VerticalAlignment="Top" Width="155"/>
+        <ListBox x:Name="SqlBNameList" Grid.Column="1" HorizontalAlignment="Left" Height="282" Margin="0,30,0,0" VerticalAlignment="Top" Width="195" SelectionChanged="SqlBNameList_SelectionChanged"/>
+        <ListBox x:Name="SqlYearList" Grid.Column="2" HorizontalAlignment="Left" Height="282" Margin="0,30,0,0" VerticalAlignment="Top" Width="79"/>
+        <ListBox x:Name="SqlPageList" Grid.Column="3" HorizontalAlignment="Left" Height="282" Margin="0,30,0,0" VerticalAlignment="Top" Width="77"/>
+        <Button x:Name="ReadFromSqlDB" Content="Read from database" HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" Width="135" Click="ReadFromSqlDB_Click" Background="#FFD13535"/>
+        <Button x:Name="ToDBButton" Content="To DB" Grid.Column="1" HorizontalAlignment="Left" Margin="0,3,0,0" VerticalAlignment="Top" Width="87" Click="ToDBButton_Click" Background="#FFD32929"/>
+        <Button Content="Delete" Grid.Column="1" Margin="92,3,28,0" VerticalAlignment="Top" Click="Button_Click" Background="#FFD63A3A"/>
+        <Button Grid.ColumnSpan="2" Content="Change" Grid.Column="1" HorizontalAlignment="Left" Margin="172,3,0,0" VerticalAlignment="Top" Width="75" Background="#FFD43D3D" Click="Button_Click_1"/>
+        <Button x:Name="SearchButton" Content="Search" Grid.Column="2" HorizontalAlignment="Left" Margin="57,3,0,0" VerticalAlignment="Top" Width="89" Grid.ColumnSpan="2" Background="#FFC73D3D" Click="SearchButton_Click"/>
+    </Grid>
+</Window>
